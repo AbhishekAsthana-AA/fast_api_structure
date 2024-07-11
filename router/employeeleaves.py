@@ -129,4 +129,5 @@ def getatchData(batchData: batchInsert, db:Session = Depends(get_db)):
            
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"LINE: {e.__traceback__.tb_lineno} ERROR: {str(e)}")
-
+ 
+ 

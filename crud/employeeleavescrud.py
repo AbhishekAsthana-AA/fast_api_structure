@@ -94,3 +94,5 @@ def batchresult(db:Session, items: List[dict]):
     except Exception as e:
         db.rollback()
         raise HTTPException(status_code=500, detail=f"LINE: {e.__traceback__.tb_lineno} ERROR: {str(e)}")
+    
+
